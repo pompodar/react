@@ -9,10 +9,10 @@ let x = false;
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header  />
       { 1 + 1 }
       {x ? name : surName  }
-      <Footer/>
+      <Footer />
     </div>
   );
 }

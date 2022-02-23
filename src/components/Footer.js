@@ -1,9 +1,21 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
-const Footer = () => {
+const Footer = ({title}) => {
   return (
-    <div>Footer</div>
+    <footer>
+      <span>
+        {title}
+      </span>
+    </footer>
   )
+}
+
+// Footer.defaultProps = {
+//   title: 'Task Tracker',
+// }
+
+Footer.propTypes  = {
+  title: PropTypes.string.isRequired
 }
 
 export default Footer
